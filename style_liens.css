@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    background-color: #a7a7a7;
+    padding: 20px;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    margin-right: 8px;
+    padding: 5px 2px;
+}
+ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+ul.hidden {
+    display: none;
+}
+header div.flexbox img {
+    width: 45%;
+    margin-bottom: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+p.date {
+    font-size: 22px;
+    font-family: 'Cormorant Infant', serif;
+    color: #2c30ae;
+}
+button {
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+div button {
+    margin-top: 10px;
+    margin-left: 130px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav ul li a, nav ul li, ul.sous-menu li a, ul.sous-menu li {
+    color: #2c30ae;
+    font-weight: 500;
+}
+nav ul li a:hover, nav ul li:hover {
+    color: #79294e;
+}
+div.sous-menu {
+    display: none;
+}
+nav.hidden {
+    width: 63%;
+}
+nav.hidden ul.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.hidden ul.flex li:not(li.sousMenu) {
+    background-color: #cac8c6;
+    width: 140px;
+    text-align: center;
+}
+.menu-deroulant {
+    position: relative;
+    padding-left: 15px;
+}
+ul.sous-menu {
+    position: absolute;
+    display: none;
+    background-color: #86b0b5;
+    padding: 10px;
+    margin-left: -16px;
+    margin-top: 5px;
+}
+.sous-menu li {
+    white-space: nowrap;
+}
+.sous-menu li a {
+    color: #2c30ae;
+}
+.sous-menu li a:hover {
+    color: #2c30ae;
+}
+.menu-deroulant:hover {
+    cursor: pointer;
+}
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}
+h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-style: oblique;
+    color: #5d2edd;
+    padding-top:50px;
+    padding-bottom:10px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-align: center;
+}
+main {
+    border: 1px solid white;
+    background-color: white;
+    padding: 20px;
+    margin-top:50px;
+}
+.bg-color {
+    border: 1px solid black;
+    background-color: #bdbcbc;
+}
+main ul li p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    line-height: 2;
+    font-size: 20px;
+    color: black;  
+}
+main ul li p a {
+    color: #8b0bda;
+}
+footer {
+    border: 1px solid black;
+    padding-right: 15px;
+    height: 100px;
+    background-color: dimgray;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 25px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    /* Responsive */
+
+@media screen and (max-width: 900px) {
+
+    ul.hidden {
+        display: block;
+    }
+    nav.hidden {
+        display: none;
+    }
+    .flexbox {
+        display: block;
+    }
+    header .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    p.date{
+        line-height: 1;
+    }
+    header div img {
+        min-width: 100%;
+    }
+    div button {
+        margin-top: 0;
+    }
+    img.humburguer {
+        width: 2.5em;
+        margin-left: -1em;
+        padding: 5px 10px;
+        font-size: 25px;
+        margin-top:20px;
+    }
+    .menu-deroulant,
+    .menuDeroulant {
+        position: relative;
+        padding-left: 15px;
+    }
+    .sous-menu,
+    .sousMenu {
+        position: absolute;
+        display: none;
+        background-color: #86b0b5;
+        padding: 10px;
+    }
+    .sousMenu li {
+        white-space: nowrap;
+    }
+    .menu-deroulant:hover,
+    .menuDeroulant:hover {
+        cursor: pointer;
+    }
+    .menu-deroulant:hover .sous-menu {
+        display: block;
+    }
+    .menuDeroulant:hover .sousMenu {
+        display: block;
+    }
+    .menuDeroulant a.dropdown-toggle {
+        padding-left: 15px;
+    }
+
+}
