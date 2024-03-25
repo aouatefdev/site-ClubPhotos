@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style_index.css">
+    <title>Projet_ClubPhoto</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="flexbox">
+                <img src="./images/banniere.png" alt="logo" class="logo">
+                <div class="flex"> 
+                    
+                    <p class="date" id="date"></p>                 
+
+                    <script>
+                        function mettreAJourDate() {
+                            let maintenant = new Date();
+                            let jour = maintenant.getDate();
+                            let mois = maintenant.getMonth(); // Les mois commencent à 0
+                            let annee = maintenant.getFullYear();
+                        
+                            // Tableau contenant les noms des mois en français
+                            let moisEnLettre = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+                        
+                            // Formatage de la date
+                            let dateFormatted = jour + ' ' + moisEnLettre[mois] + ' ' + annee;
+                        
+                            // Mise à jour de l'élément HTML avec la classe "date"
+                            document.querySelector('.date').textContent = "Nous sommes le : " + dateFormatted;
+                        }
+                        
+                        // Appeler la fonction initiale
+                        mettreAJourDate();
+                        
+                        // Mettre à jour la date toutes les secondes (1000 millisecondes)
+                        setInterval(mettreAJourDate, 1000);
+                        </script>
+ 
+                    <button>Espace adhérent</button>
+                </div>
+            </div>
+            <nav class="hidden">
+                <ul class="flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown-toggle menu-deroulant">Le club
+                        <ul class="dropdown-menu sous-menu" aria-labelledby="dropdownMenuLink">
+                            <li class="sousMenu"><a class="dropdown-item" href="fonctionnement.html">Le
+                                    fonctionnement</a></li>
+                            <li class="sousMenu"><a class="dropdown-item" href="activites.html">Les activités</a></li>
+                            <li class="sousMenu"><a class="dropdown-item"
+                                    href="https://federation-photo.fr/wp-content/uploads/Fichiers_pdf/Statuts/Statuts.pdf">Les
+                                    status</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.clubphotopornichet.com/expos-par-ann%C3%A9e-1">Les expositions</a></li>
+                    <li><a href="photos.html">Les photos</a></li>
+                    <li><a href="liens.html">Quelques liens</a></li>
+                </ul>
+            </nav>
+            <!-- Menu Humburguer pour mobile -->
+            <ul class="hidden">
+                <li class="menu-deroulant">
+                    <img class="humburguer bg-light" src="menu.png" alt="icon humburguer">
+                    <ul class="sous-menu">
+                        <li>
+                            <a class="dropdown-item" href="index.html">Home</a>
+                        </li>
+                        <li class="menuDeroulant dropdown-toggle">Le club
+                            <ul class="sousMenu">
+                                <li>
+                                    <a class="dropdown-item" href="fonctionnement.html">Le fonctionnement</a>
+                                </li>
+                                <li>
+                                <a class="dropdown-item" href="activites.html">Les activités</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="https://federation-photo.fr/wp-content/uploads/Fichiers_pdf/Statuts/Statuts.pdf">Les status</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                                href="https://www.clubphotopornichet.com/expos-par-ann%C3%A9e-1">Les expositions</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="photos.html">Les photos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="liens.html">Quelques liens</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="bg-color">
+                <h1>Bienvenu sur le site du club photo DWWM</h1>
+                <p>
+                    Le club photo est une association de loi 1901 qui a pour objectif de réunir des amateurs de
+                    photos initiés ou non.
+                </p>
+                <p>
+                    Pour ses activités, le club dispose de locaux situés dans une des maisons
+                    associatives de la ville.
+                </p>
+                <p>
+                    Le club est adhérent à une autre association dont le but est de promouvoir la photographie au
+                    niveau départemental : le Comité Départemental des Photographes Amateurs (CDPA).
+                </p>
+                <p>
+                    Le premier objectif du club est d'apprendre ou de s'améliorer dans les techniques de la prise de
+                    vue, du tirage et du développement de photographies argentiques et/ou numériques.
+                </p>
+            </div>
+            <aside>
+                <h2>Manifestations en cours</h2>
+                <select name="select" multiple>
+                    <option value="MenuItem">MenuItem</option>
+                    <option value="MenuItem" selected>MenuItem</option>
+                    <option value="MenuItem">MenuItem</option>
+                    <option value="MenuItem">MenuItem</option>
+                    <option value="MenuItem">MenuItem</option>
+                </select>
+            </aside>
+        </main>
+        <footer>
+            <a href="#">Copyright:DWWM</a>
+            <a href="https://www.associatheque.fr/fr/fichiers/bao/fiche-memo-mentions-legales-site-associatif.pdf">Mentions
+                légales</a>
+            <a href="contact.html">Nous contacter</a>
+        </footer>
+    </div>
+</body>
+
+</html>

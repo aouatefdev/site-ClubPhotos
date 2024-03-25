@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=The+Nautigal:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.hidden {
+    display: none;
+}
+div.content {
+    background-color: #a7a7a7;
+    padding: 20px;
+}
+header {
+    background-color: #969696;
+    padding: 20px; 
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+header div.flexbox img.logo {
+    width: 45%;
+    padding-left: 2em;
+}
+p.date {
+    font-size: 22px;
+    font-family: 'Cormorant Infant', serif;
+    color: #2c30ae;
+    line-height: 1;
+}
+div button {
+    padding: 0  5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-left: 130px;
+}
+ul {
+    list-style: none;
+   
+}
+ul li {
+    padding: 5px 2px;
+    margin-right: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(63, 55, 55);
+    white-space: nowrap;
+}
+nav {
+    width: 65%;
+    margin-top: 50px;
+}
+nav ul.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul.flex li:not(li.sousMenu) {
+    background-color: #cac8c6;
+    width: 140px;
+    text-align: center;
+}
+nav ul li a, nav ul li, ul.sous-menu li a, ul.sous-menu li{
+    color: #2c30ae;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav ul li a:hover, nav ul li:hover {
+    color: #79294e;
+}
+div.sous-menu {
+    display: none;
+}
+.menu-deroulant {
+    position: relative;
+    padding-left: 15px;
+}
+.menu-deroulant:hover {
+    cursor: pointer;
+}
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}
+ul.sous-menu {
+    position: absolute;
+    display: none;
+    background-color: #86b0b5;
+    padding: 10px;
+    margin-left: -16px;
+    margin-top: 5px;
+}
+.sous-menu li {
+    white-space: nowrap;
+
+}
+.sous-menu li a {
+    color: #2c30ae;
+}
+.sous-menu li a:hover {
+    color: #2c30ae;
+}
+main div.container h2 {
+    text-align: center;
+    margin: 10px;
+}
+h2 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-style: oblique;
+    color: #5d2edd;
+    padding: 10px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-align: center;
+}
+p {
+    margin-left: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+main {  
+    border: 1px solid white;
+    background-color: white;
+    padding: 25px 0;
+}
+.bg-color {
+    border: 1px solid #bdbcbc;
+    background-color: #bdbcbc;
+    width:100%;
+    padding:0 50px;
+}
+footer {
+    border: 1px solid black;
+    padding-right: 15px;
+    height: 100px;
+    background-color: dimgray;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 25px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+    /* Responsive */
+
+@media screen and (max-width: 900px) {
+
+    ul.hidden {
+        display: block;
+    }
+    nav.hidden {
+        display: none;
+    }
+    header div img.logo {
+        width: 100%  !important;
+    }
+    div button {
+        padding: 0 5px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 0;
+        margin-left: 130px;
+    }
+    .flexbox {
+        display: block;
+    }
+    img.humburguer {
+        width: 2.5em;
+        margin-left: -1em;
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        margin-bottom: 7px;
+    }
+    .menu-deroulant,
+    .menuDeroulant {
+        position: relative;
+        padding-left: 15px;
+        z-index: 2;
+    }
+    .sous-menu,
+    .sousMenu {
+        position: absolute;
+        display: none;
+        background-color: #86b0b5;
+        padding: 10px;
+    }
+    .sousMenu li {
+        white-space: nowrap;
+    }
+    .menu-deroulant:hover,
+    .menuDeroulant:hover {
+        cursor: pointer;
+    }
+    .menu-deroulant:hover .sous-menu {
+        display: block;
+    }
+    .menuDeroulant:hover .sousMenu {
+        display: block;
+    }
+    .menuDeroulant a.dropdown-toggle {
+        padding-left: 15px;
+    } 
+}

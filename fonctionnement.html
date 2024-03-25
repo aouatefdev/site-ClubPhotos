@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styleFonctionnement.css">
+        <title>Fonctionnement</title>       
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="flexbox">
+                    <img src="./images/banniere.png" alt="logo">
+                    <div class="flex">
+                        <p class="date">Nous somme le : 29 Décembre 2022</p>
+                        <button>Espace adhérent</button>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown-toggle menu-deroulant">Le club
+                            <ul class="dropdown-menu sous-menu" aria-labelledby="dropdownMenuLink">
+                               <li class="sousMenu"><a class="dropdown-item" href="fonctionnement.html">Le fonctionnement</a>
+                               </li>
+                               <li class="sousMenu"><a class="dropdown-item"   href="activites.html">Les activités</a></li>
+                               <li class="sousMenu"><a class="dropdown-item"   href="https://federation-photo.fr/wp-content/uploads/Fichiers_pdf/Statuts/Statuts.pdf">Les status</a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="https://www.clubphotopornichet.com/expos-par-ann%C3%A9e-1">Les expositions</a></li>
+                        <li><a href="photos.html">Les photos</a></li>
+                        <li><a href="liens.html">Quelques liens</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Menu Humburguer pour mobile -->
+
+                <ul class="hidden">
+                    <li class="menu-deroulant">
+                        <img class="humburguer bg-light" src="menu.png" alt="icon humburguer">
+                        <ul class="sous-menu">
+                            <li>
+                                <a class="dropdown-item" href="index.html">Home</a>
+                            </li>
+                            <li class="menuDeroulant dropdown-toggle">Le club
+                                <ul class="sousMenu">
+                                    <li><a class="dropdown-item" href="fonctionnement.html">Le fonctionnement</a></li>
+                                    <li><a class="dropdown-item" href="activites.html">Les activités</a></li>
+                                    <li><a class="dropdown-item" href="https://federation-photo.fr/wp-content/uploads/Fichiers_pdf/Statuts/Statuts.pdf">Les status</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.clubphotopornichet.com/expos-par-ann%C3%A9e-1">Les expositions</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="photos.html">Les photos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="lien.html">Quelques liens</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+        <main>
+            <div class="bg-color">
+                <h1>FONCTIONNEMENT</h1>
+                <p>Le site du club photo DWWM a des horaires pour les
+                    catégories de jeunes, afin de permettre à nos jeunes de profiter à plein de la découverte de toutes
+                    nos activités culturelles et artistiques.
+                </p>
+
+                <p>Voici le détail des horaires en vigueur :</p>
+
+                <table>
+                    <h4>Horaires du site DWWM</h4>
+                    <tr>
+                        <th class="">Mardi</th>
+                        <th class="">Mercredi</th>
+                        <th class="">Jeudi</th>
+                        <th class="">Vendredi</th>
+                    </tr>
+                    <tr>
+                        <td>18h à 19h30 : U12-U13</td>
+                        <td>14h à 15h45 : U6-U7</td>
+                        <td>18h à 19h30 : U12-U13</td>
+                        <td>17h30 à 19h : U10-U11</td>
+                    </tr>
+                    <tr>
+                        <td>18h30 à 20h : U14-U15</td>
+                        <td>16h à 17h30 : U10-U11</td>
+                        <td>18h30 à 20h : U14-U15</td>
+                        <td rowspan="2">18h30 à 20h : U16-U18</td>
+                    </tr>
+                    <tr>
+                        <td>19h30 à 21h : U16-U17</td>
+                        <td>18h à 20h : U13-U15F</td>
+                        <td>19h30 à 21h : U16-U17</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+            <footer>
+                <a href="#">Copyright:DWWM</a>
+                <a href="https://www.associatheque.fr/fr/fichiers/bao/fiche-memo-mentions-legales-site-associatif.pdf">Mentions légales</a>
+                <a href="contact.html">Nous contacter</a>
+            </footer>
+        </div>
+    </body>
+
+</html>
